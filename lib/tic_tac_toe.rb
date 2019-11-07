@@ -113,7 +113,7 @@ until over?
    end
    if won?
       puts "Congratulations #{winner}!"
-   else draw
+   else draw?
       puts "Cat's Game!"
    end
  end
