@@ -103,7 +103,7 @@ def won?
 
 def winner
   if won?
-    return @board[won?]
+    return @board[won?[0]]
   end
 end
 
