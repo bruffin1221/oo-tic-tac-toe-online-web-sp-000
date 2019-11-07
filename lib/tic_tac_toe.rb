@@ -57,6 +57,7 @@ def turn
   index=input_to_index(user_input)
   if valid_move?(index)
      current_player
+     @board
   else turn
   end
 end
