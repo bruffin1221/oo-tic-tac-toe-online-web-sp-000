@@ -87,10 +87,11 @@ def won?
   end
 
   def draw?(
-   if !won?(@board) && full?(@board)
-     return true
-   else won?(@board)
-     return false
-   end
+    if !won? && full?
+      return true
+    else won?
+      return false
+    end
+  end
 
 end
