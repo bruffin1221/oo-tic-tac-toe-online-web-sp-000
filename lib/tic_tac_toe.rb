@@ -86,7 +86,7 @@ def won?
   @board.all? {|index| index == "X" || index == "O"}
   end
 
-  def draw?(
+  def draw?
     if true
       !won && full?
     else false
