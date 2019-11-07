@@ -84,8 +84,38 @@ def won?
 
   def full?
   @board.all? {|index| index == "X" || index == "O"}
-end
+  end
 
+  def draw?(
+   if !won?(@board) && full?(@board)
+     return true
+   else won?(@board)
+     return false
+   end
+ end
 
+ def over?(board)
+   if won?(board) || full?(board) || draw?(board)
+      return true
+    else false
+    end
+  end
+
+  def winner(board)
+ if won?(board)
+   return board[won?(board)[0]]
+ end
+ end
+
+def play(board)
+while !over?(board)
+  turn(board)
+   end
+   if won?(board)
+      puts "Congratulations #{winner(board)}!"
+   else draw?(board)
+      puts "Cat's Game!"
+   end
+ end
 
 end
