@@ -55,7 +55,7 @@ def turn
   puts "Please enter 1-9:"
   user_input=gets.chomp
   index=input_to_index(user_input)
-  corrent_player=player
+  current_player=player
   if valid_move?(index)
     move(index, player)
   else turn
