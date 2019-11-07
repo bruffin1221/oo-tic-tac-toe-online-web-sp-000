@@ -87,12 +87,12 @@ def won?
   end
 
   def draw?(
-    !won? && full?
+    if !won? && full?
       true
-     won?
-      return false
+    else won?
+      false
     end
   end
-end
+
 
 end
