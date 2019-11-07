@@ -107,5 +107,15 @@ def winner
   end
 end
 
+def play
+while !over?
+  turn(board)
+   end
+   if won?
+      puts "Congratulations #{winner}!"
+   else draw
+      puts "Cat's Game!"
+   end
+ end
 
 end
