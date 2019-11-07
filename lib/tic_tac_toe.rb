@@ -89,9 +89,10 @@ def won?
   def draw?(
     !won? && full?
       true
-    else won?
+     won?
       return false
     end
   end
+end
 
 end
