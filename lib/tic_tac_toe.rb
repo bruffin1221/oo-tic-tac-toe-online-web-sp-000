@@ -56,7 +56,7 @@ def turn
   user_input=gets.chomp
   index=input_to_index(user_input)
   if valid_move?(index, cu)
-    move(index, current_player)
+    move(current_player)
   else turn
   end
 end
